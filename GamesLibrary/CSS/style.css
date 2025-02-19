@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #E8E9EB;
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #E0DFD5;
+    border-bottom: #313638 2px solid;
+}
+
+.links {
+    text-decoration: none;
+    padding: 0.8rem;
+}
+
+#search-content {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    border-radius: 6px;
+    padding: 0.2rem;
+    border: none;
+    margin-left: 0.5rem;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#colors-change,
+#search-content,
+.links {
+    color: #313638;
+    font-size: 1.7rem;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.fa-regular,
+.fa-solid {
+    cursor: pointer;
+}
+
+#sun {
+    display: none;
+}
+
+/* PRIMEIRA SECTION DE CARROSEL DE DESTAQUES */
+
+#carrousel {
+    padding-top: 0.1rem;
+}
+
+.carrousel-content {
+    position: relative;
+    width: 100%;
+}
+
+.carrousel-content img {
+    width: 100vw;
+    height: 500px;
+}
+
+.text-content{
+    display: inline-block; /* Faz o contêiner se ajustar ao conteúdo */
+    border: 2px solid #313638; 
+    padding: 1rem;
+    background-color: rgba(224, 223, 213, 0.7);
+    position: absolute; /* Posiciona o texto sobre a imagem */
+    bottom: 2rem; /* Distância do fundo */
+    left: 2rem; /* Distância da esquerda */
+    max-width: 80%;
+    color: #313638;
+}
+
+.text-content h2 {
+    font-size: 3rem;
+}
+
+.text-content p{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.more {
+    text-decoration: none;
+    background-color: #313638;
+    color: #E0DFD5;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    font-size: 1.5rem;
+}
+
+.none {
+    display: none;
+}
+
+/* SEGUNDA SECTION DE EXIBIÇAO */
+
+#expo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.subTitle {
+    font-size: 3rem;
+    padding: 0.5rem;
+    
+}
+
+#all {
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: left;
+    font-size: 2rem;
+    padding: 0.8rem;
+}
+
+
+/* JOGOS EM EXIBIÇAO */
+.sub-section{
+    margin-bottom: 5rem;
+}
+
+.sub-section ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    padding: 0px;
+    width: 268px;
+    height: 368px;
+    background-color: #E0DFD5;
+    border-radius: 16px;
+}
+
+li img {
+    border-radius: 16px 16px 0 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.plataforms {
+    color: #313638;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.info,
+.info i{
+    color: #313638;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.game-details {
+    color: #313638;
+    border: none;
+    text-decoration: none;
+}
+
+
+/* ESTILIZAÇAO DE ADICIONAR AO FAVORITOS */
+.fav-add {
+    padding: 1rem;
+    font-size: 2.2rem;
+    display: none;
+    color: #fff;
+    position: absolute;
+}
+
+#add {
+    display: none;
+}
+
+.game-details:hover{
+    .fav-add{
+        display: block;
+    }
+
+    img{
+        opacity: 0.2;
+    }
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: #E0DFD5;
+    border-top: #313638 solid 2px;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* LINHAS REFERENTES A ESTILIZAAÇAO DO MODO ESCURO(DARKMODE) */
+
+body.dark {
+    background-color: #5c5c5a;
+}
+
+.dark header {
+    background-color: #313638;
+    color: #F09D51;
+    border-bottom: #F09D51 2px solid;
+}
+
+.dark #search {
+    background-color:  rgba(240, 157, 81, 0.5);
+    color: #E8E9EB;
+}
+
+.dark #colors-change,
+.dark #search-content,
+.dark .links {
+    color: #F09D51;
+}
+
+.dark #moon {
+    display: none;
+}
+
+.dark #sun {
+    display: block;
+}
+
+.dark .text-content{
+    border: 2px solid #F09D51; 
+    background-color: rgba(49, 54, 56, 0.9);
+    color: #F09D51;
+}
+
+.dark .more {
+    background-color: #F09D51;
+    color: #313638;
+}
+
+.dark footer {
+    background-color: #313638;
+    color: #F09D51;
+    border-top: 2px solid #F09D51;
+}
+
+.dark .subTitle,
+.dark h3 {
+    color: #E0DFD5;
+}
+
+.dark .game-details {
+   border-radius: 16px;
+}
+
+.dark li {
+    background-color: #313638;
+}
+
+.dark .info,
+.dark .info i{
+    color: #E0DFD5;
+    margin-left: 0.5rem;
+}
+
+.dark .plataforms{
+    font-size: 0.8rem;
+    color: #E0DFD5;
+}
+
+/* Estlilizaçao da pagina ALL(somente cor de botao) */
+.dark .btn-outline-custom {
+    color: #F09D51;
+    border-color: #F09D51;
+}
+
+.dark .btn:hover{
+    background-color: #F09D51;
+    color: #313638;
+    border-color: #313638;
+}
+
+
+
+
+
+
+
+

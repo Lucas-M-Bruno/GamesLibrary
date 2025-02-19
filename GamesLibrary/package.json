@@ -1,0 +1,12 @@
+{
+  "name": "GamesLibrary",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lucas Bruno <lucasmoura3108@gmail.com>",
+  "license": "MIT",
+  "description": "Um site de jogos desenvolvido para praticar integrações com a API RAWG, exibindo destaques, lista de jogos e detalhes individuais, além de uma barra de pesquisa funcional."
+}

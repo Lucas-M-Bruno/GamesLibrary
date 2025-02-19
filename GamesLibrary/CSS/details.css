@@ -1,0 +1,17 @@
+.dark #aside {
+  width: 500px;
+  border-color: #f09d51 !important;
+}
+
+.dark main {
+  width: 500px;
+  color: #e8e9eb;
+}
+
+.dark .border {
+  border-color: #f09d51 !important;
+}
+
+.dark #bkg {
+  background-color: #f09d51;
+}
